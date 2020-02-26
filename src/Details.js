@@ -1,5 +1,6 @@
 import React from 'react';
 import pet from '@frontendmasters/pet';
+import Carousel from './Carousel';
 
 class Details extends React.Component {
 	state = { loading: true };
