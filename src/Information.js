@@ -16,8 +16,8 @@ const Information = () => {
 					<a href="https://github.com/demetrio/adopt-me#-problem-with-the-api">More info here.</a>
 				</h4>
 
-				<button className="circle fromMiddle" data-animation="magnify" data-remove="3000" onClick={() => hideAlert()}>
-					<span></span>
+				<button type="button" className="close" aria-label="Close" onClick={() => hideAlert()}>
+					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 		);
