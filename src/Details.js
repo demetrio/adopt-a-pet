@@ -1,5 +1,5 @@
 import React from 'react';
-import pet from '@frontendmasters/pet';
+import pet from '@demetrio/pet';
 import ErrorBoundary from './ErrorBoundary';
 import { navigate } from '@reach/router';
 import Modal from './Modal';

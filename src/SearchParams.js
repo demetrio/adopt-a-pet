@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import pet, { ANIMALS } from '@frontendmasters/pet';
+import pet, { ANIMALS } from '@demetrio/pet';
 import useDropdown from './useDropdown';
 import Results from './Results';
 import ThemeContext from './ThemeContext';
@@ -32,7 +32,7 @@ const SearchParams = () => {
 			const breedStrings = breeds.map(({ name }) => name);
 			updateBreeds(breedStrings);
 		}, console.error);
-	}, [animal]);
+	}, [animal, updateBreed]);
 
 	return (
 		<div className="search-params">
