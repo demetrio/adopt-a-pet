@@ -5,6 +5,7 @@ class Carousel extends React.Component {
 		photos: [],
 		active: 0,
 	};
+
 	static getDerivedStateFromProps({ media }) {
 		let photos = ['https://placecorgi.com/600/600'];
 
@@ -14,14 +15,16 @@ class Carousel extends React.Component {
 
 		return { photos };
 	}
+
 	handleIndexClick = event => {
 		this.setState({
-			// In order to convert the String to a Number
 			active: +event.target.dataset.index,
 		});
 	};
+
 	render() {
 		const { photos, active } = this.state;
+
 		return (
 			<div className="carousel">
 				<img src={photos[active]} alt="animal" />

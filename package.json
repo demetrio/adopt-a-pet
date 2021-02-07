@@ -12,7 +12,7 @@
 		"test:update": "jest -u",
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage",
-		"build": "parcel build src/index.html"
+		"build": "parcel build src/index.html --no-cache --no-source-maps --no-minify"
 	},
 	"author": "",
 	"license": "ISC",
@@ -31,7 +31,7 @@
 		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^2.5.1",
 		"jest": "^25.5.4",
-		"parcel-bundler": "^1.12.4",
+		"parcel-bundler": "1.12.4",
 		"prettier": "^1.19.1"
 	},
 	"dependencies": {
