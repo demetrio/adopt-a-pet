@@ -5,15 +5,19 @@
   </a>
 </p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eca3d891-f96d-4d4e-b678-ceb57e264f33/deploy-status)](https://app.netlify.com/sites/friendly-heyrovsky-4550ba/deploys)
+
 This project has been carried out following the React FrontEnd Masters course.
 
 The intention of this course is to improve and consolidate my knowledge of React and other technologies surrounding React.
 
-## 🐛 Problem with the API
+## 🐛 Problem with the API (Now solved)
 
 If you access the web with the link provided in this repository, you won't be able to make any requests.
 
 The Pet Finder API endpoint used by FrontEndMasters makes HTTP requests instead of HTTPS, so it is necessary to disable the protection to see the results, as you see for example on Firefox in the next image.
+
+Solution: I Downloaded the npm package and modified it in order to solve it.
 
 <p  align="center">
   <a  href="https://adopt.demetrio.dev">
