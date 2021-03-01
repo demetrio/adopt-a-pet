@@ -4,18 +4,18 @@ import { createPortal } from 'react-dom';
 const modalRoot = document.getElementById('modal');
 
 const Modal = ({ children }) => {
-	const elRef = useRef(null);
-	if (!elRef.current) {
-		elRef.current = document.createElement('div');
-	}
+  const elRef = useRef(null);
+  if (!elRef.current) {
+    elRef.current = document.createElement('div');
+  }
 
-	useEffect(() => {
-		modalRoot.appendChild(elRef.current);
-		return () => modalRoot.removeChild(elRef.current);
-	}, []);
+  useEffect(() => {
+    modalRoot.appendChild(elRef.current);
+    return () => modalRoot.removeChild(elRef.current);
+  }, []);
 
-	// If there is a return fuction, is going to be the cleanup function
-	return createPortal(<div>{children}</div>, elRef.current);
+  // If there is a return fuction, is going to be the cleanup function
+  return createPortal(<div>{children}</div>, elRef.current);
 };
 
 export default Modal;

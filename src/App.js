@@ -7,22 +7,22 @@ import ThemeContext from './ThemeContext';
 const Details = lazy(() => import('./Details'));
 
 const App = () => {
-	const themeHook = useState('purple');
-	return (
-		<React.StrictMode>
-			<ThemeContext.Provider value={themeHook}>
-				<header>
-					<Link to="/">Adopt Me!</Link>
-				</header>
-				<Suspense fallback={<h1>loading ...</h1>}>
-					<Router>
-						<SearchParams path="/" />
-						<Details path="/details/:id" />
-					</Router>
-				</Suspense>
-			</ThemeContext.Provider>
-		</React.StrictMode>
-	);
+  const themeHook = useState('purple');
+  return (
+    <React.StrictMode>
+      <ThemeContext.Provider value={themeHook}>
+        <header>
+          <Link to="/">Adopt Me!</Link>
+        </header>
+        <Suspense fallback={<h1>loading ...</h1>}>
+          <Router>
+            <SearchParams path="/" />
+            <Details path="/details/:id" />
+          </Router>
+        </Suspense>
+      </ThemeContext.Provider>
+    </React.StrictMode>
+  );
 };
 
 render(<App />, document.getElementById('root'));
