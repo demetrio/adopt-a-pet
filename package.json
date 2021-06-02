@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "A simple React project",
   "main": "index.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
@@ -14,7 +17,7 @@
     "test:update": "jest -u",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "build": "parcel build src/index.html --no-cache --no-source-maps --no-minify"
+    "build": "parcel build src/index.html --no-cache --no-source-maps"
   },
   "author": "",
   "license": "ISC",
